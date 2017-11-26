@@ -1,0 +1,55 @@
+body {
+background: radial-gradient(circle, lightseagreen, lightcyan);
+
+}
+
+
+#mainheading{
+	background: chocolate;
+	margin-top: 10px;
+
+}
+h1{
+	color: white;
+}
+
+#instructions {
+	padding: 10px;
+	background: moccasin;
+	color: limegreen;
+	margin-top: 10px;
+}
+
+.randombox{
+	background: lightgreen;
+	font-size: 30px;
+	height: 100px;
+	margin-top: 10px;
+	margin-right: 10px;
+
+}
+
+#win-lose{
+	background: lightpink;
+	height: 100px;
+	margin-top: 10px;
+}
+
+.gemsgroup {
+	margin-top: 10px;
+	margin-left: -20px;
+}
+
+#total {
+	background: lightseagreen;
+	margin-top: 10px;
+	color: white;
+}
+
+#scoredisplay{
+	background: lightseagreen;
+	margin-top: 10px;
+	height: 100px;
+	color: white;
+	font-size: 30px;
+}
