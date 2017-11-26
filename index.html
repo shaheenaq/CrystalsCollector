@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<title>Crystal Game</title>
+	<!--link to css reset page
+	<link rel="stylesheet" type="text/css" href="#">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="crystal.css">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script type="text/javascript" src="crystal.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4" id="mainheading">
+			<h1>Crystals Collector!</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6" id="instructions">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+			<p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number.</p>
+			<p>The value of each crystal is hidden from you until you click on it.
+			</p>
+			<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 randombox">
+			<div id="randomNumber"></div>
+			</div>
+			<div class="col-md-1" id="win-lose">
+			<div>Wins: <span id="wins"></span></div>
+			<div>Losses: <span id="lose"></span></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-5 btn-toolbar gemsgroup">
+			<button class="btn btn-default" id="gem1"><img src="lightblue.png" width="50"></button>
+			<button class="btn btn-default" id="gem2"><img src="yellowgem.png" width="50"></button>
+			<button class="btn btn-default" id="gem3"><img src="purplegem.png" width="50"></button>
+			<button class="btn btn-default" id="gem4"><img src="redgem.png" width="50"></button>
+			</div>
+		</div>
+		<div class="row"> 
+			<div class="col-md-4" id="total">
+			<p>Your total score is:</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4" id="scoredisplay">
+			<div id="score"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
