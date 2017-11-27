@@ -1,3 +1,5 @@
+//Intialize all global variables
+
 var wincount = 0;
 var losses = 0;
 var gameOver = false;
@@ -9,7 +11,7 @@ var maximum = 120;
 var minimum = 19;
 var randomNumber = Math.floor(Math.random()*(maximum - minimum + 1)) + minimum;
 
-//Initializing each variable to zero
+//Initializing each variable associated with each crystal and total score to zero
 var gemOne = 0;
 var gemTwo = 0;
 var gemThree = 0;
@@ -23,7 +25,7 @@ gemThree = Math.floor(Math.random() * 12) + 1;
 gemFour = Math.floor(Math.random() * 12) + 1;	
 
 function nextGame(){
-	//reset for next round of game
+//reset for next round of game
 randomNumber = Math.floor(Math.random()*(maximum - minimum + 1)) + minimum;
 $("#randomNumber").html(randomNumber);
 totalScore = 0;
@@ -36,6 +38,7 @@ gemFour = Math.floor(Math.random() * 12) + 1;
 
 }
 
+//Check for if the user has the total score match the random number
 function checkForWin(){
 	if(totalScore === randomNumber){
 		wincount++;
@@ -44,9 +47,9 @@ function checkForWin(){
 		gameOver = true;
 		nextGame();
 		}
-	
 }
 
+//Check if the user has gone over the total score limit as compared to the random number
 function checkForLoss(){
 	if(totalScore > randomNumber){
 		losses++;
@@ -55,8 +58,9 @@ function checkForLoss(){
 	nextGame();
 	}
 	//location.reload();
-	
 }
+
+//The document loads and the game is available for the user interact
 
 $(function(){
 	
@@ -65,6 +69,8 @@ $("#randomNumber").append(randomNumber);
 
 
 //When each gem is clicked, the number assigned to it will be added to totalscore.
+//And it will add to the total score when each of the following crystal buttons are clicked
+
 $("#gem1").on("click", function(){
 	totalScore += gemOne;
 	$("#score").html(totalScore);
