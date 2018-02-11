@@ -1,6 +1,6 @@
-####CrystalsCollector####
+### CrystalsCollector
 
-###Objective of the game:
+### Objective of the game:
 
 When the game starts, when the page loads, a Random Number is displayed.
 
@@ -12,6 +12,13 @@ As you click on a crystal the value of it is added to the Total Score
 The aim is to match the Total Score with the Random Number.
 
 The total wins and losses will be recorded, as you play multiple times.
+
+### Tools Used:
+* Bootstrap
+* HTML5
+* CSS3
+* JavaScript
+* jQuery
 
 
 
